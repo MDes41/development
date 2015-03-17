@@ -1,16 +1,6 @@
 .row {
-	width: 85%;
+	width: 25%;
 	max-width: 1100px;
 	margin: 0 auto;
-	color: blue;
-	height: 500px;
-	border: solid blue;
 	@include clearfix;
-}
-
-.column half {
-	float: left;
-	box-sizing: border-box;
-	padding: 0 
-	width: (85%/2);
 }
