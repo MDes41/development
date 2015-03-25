@@ -1,3 +1,19 @@
+// Responsive
+@mixin media($bp, $size: small) {
+	@if $size == small { @media (max-width: $bp) { @content; } }
+	@else if $size == large { @media (min-width: $bp) { @content; } }
+}
+
+
+// Vertical Alignment
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+
 // Rem output with px fallback
 @mixin font-size($sizeValue: 1) {
 	font-size: ($sizeValue * 16) * 1px;

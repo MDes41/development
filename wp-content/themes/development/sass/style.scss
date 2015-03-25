@@ -43,6 +43,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	12.2 Galleries
 --------------------------------------------------------------*/
 @import "variables-site/variables-site";
+@import "variables/breakpoints";
+@import "variables/colors";
 @import "mixins/mixins-master";
 
 /*--------------------------------------------------------------
@@ -50,7 +52,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 --------------------------------------------------------------*/
 @import "normalize";
 
-@import "layout/grid";
+@import "grid/settings";
 /*--------------------------------------------------------------
 2.0 Typography
 --------------------------------------------------------------*/
@@ -95,6 +97,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 10.0 Content
 --------------------------------------------------------------*/
 @import "site/site";
+@import "custom";
 
 /*--------------------------------------------------------------
 11.0 Infinite scroll

@@ -41,6 +41,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	12.1 Captions
 	12.2 Galleries
 --------------------------------------------------------------*/
+/* Colors
+================================================================================================= */
 /*--------------------------------------------------------------
 1.0 Normalize
 --------------------------------------------------------------*/
@@ -221,11 +223,42 @@ th {
   padding: 0; }
 
 .row {
-  width: 25%;
-  max-width: 1100px;
-  margin: 0 auto;
-  content: "";
-  display: table; }
+  width: 85%;
+  max-width: 1140px;
+  margin: 0 auto 1em; }
+
+[class*="column-"] {
+  float: left;
+  box-sizing: border-box;
+  padding: 0 2%;
+  margin: 0 2% 0 0; }
+  [class*="column-"]:last-of-type {
+    margin-right: 0; }
+
+.column-12 {
+  width: 6.5%; }
+.column-11 {
+  width: 7.2727272727%; }
+.column-10 {
+  width: 8.2%; }
+.column-9 {
+  width: 9.3333333333%; }
+.column-8 {
+  width: 10.75%; }
+.column-7 {
+  width: 12.5714285714%; }
+.column-6, .column-sixth, .column-sixths, .column-one-sixth, .column-one-sixths, .column-two-third, .column-two-thirds {
+  width: 15%; }
+.column-5 {
+  width: 18.4%; }
+.column-4, .column-quarter, .column-quarters, .column-fourth, .column-fourths, .column-one-quarter, .column-one-quarters {
+  width: 23.5%; }
+.column-3, .column-third, .column-thirds, .column-one-third, .column-one-thirds {
+  width: 32%; }
+.column-2, .column-half, .column-halfs, .column-halve, .column-halves, .column-one-half, .column-one-halves {
+  width: 49%; }
+.column-1, .column-full, .column-whole {
+  width: 100%; }
 
 /*--------------------------------------------------------------
 2.0 Typography
